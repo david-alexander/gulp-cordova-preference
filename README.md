@@ -1,5 +1,7 @@
 # gulp-cordova-preference
 
+[![Build Status](https://travis-ci.org/SamVerschueren/gulp-cordova-preference.svg?branch=master)](https://travis-ci.org/SamVerschueren/gulp-cordova-preference)
+
 > Set a preference of your cordova project
 
 ## Installation
@@ -12,7 +14,7 @@ npm install --save-dev gulp-cordova-preference
 This plugin can be used in two different ways. The first way is by passing an object with key-value pairs
 as parameter. The key will be used as name of the preference, the value will be used as value.
 
-```JavaScript
+```javascript
 var gulp = require('gulp'),
     create = require('gulp-cordova-create'),
     pref = require('gulp-cordova-preference');
@@ -32,7 +34,7 @@ gulp.task('build', function() {
 The second way is by providing two parameters, the first one being the name of the preference, the second
 one as the value of the preference.
 
-```JavaScript
+```javascript
 var gulp = require('gulp'),
     create = require('gulp-cordova-create'),
     pref = require('gulp-cordova-preference');
@@ -58,7 +60,7 @@ once.
 
 #### prefs
 
-*Required*  
+*Required*
 Type: `object`
 
 A key-value pair object where the key is the name of the preference and the value the value.
@@ -67,14 +69,14 @@ A key-value pair object where the key is the name of the preference and the valu
 
 ##### name
 
-*Required*  
+*Required*
 Type: `string`
 
 The name of the preference.
 
 ##### value
 
-*Required*  
+*Required*
 Type: `string`
 
 The value of the preference.
@@ -83,7 +85,7 @@ The value of the preference.
 
 See [`gulp-cordova`](https://github.com/SamVerschueren/gulp-cordova) for the full list of available packages.
 
-## Contributors
+## Author
 
 - Sam Verschueren [<sam.verschueren@gmail.com>]
 
