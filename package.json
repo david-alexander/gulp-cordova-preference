@@ -4,7 +4,7 @@
   "description": "Set a preference of your cordova project.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
@@ -26,10 +26,19 @@
     "url": "https://github.com/SamVerschueren/gulp-cordova-preference/issues"
   },
   "homepage": "https://github.com/SamVerschueren/gulp-cordova-preference",
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "cordova-config": "^0.3.0",
     "elementtree": "^0.1.6",
     "gulp-util": "^3.0.4",
     "through2": "^0.6.5"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "fs-extra": "^0.24.0",
+    "mocha": "^2.3.0",
+    "tempfile": "^1.1.1"
   }
 }
