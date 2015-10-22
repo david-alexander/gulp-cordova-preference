@@ -1,6 +1,6 @@
 {
   "name": "gulp-cordova-preference",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Set a preference of your cordova project.",
   "main": "index.js",
   "scripts": {
@@ -30,8 +30,7 @@
     "index.js"
   ],
   "dependencies": {
-    "cordova-config": "^0.3.0",
-    "elementtree": "^0.1.6",
+    "cordova-config": "^0.6.2",
     "gulp-util": "^3.0.4",
     "through2": "^0.6.5"
   },
