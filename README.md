@@ -1,6 +1,4 @@
-# gulp-cordova-preference
-
-[![Build Status](https://travis-ci.org/SamVerschueren/gulp-cordova-preference.svg?branch=master)](https://travis-ci.org/SamVerschueren/gulp-cordova-preference)
+# gulp-cordova-preference [![Build Status](https://travis-ci.org/SamVerschueren/gulp-cordova-preference.svg?branch=master)](https://travis-ci.org/SamVerschueren/gulp-cordova-preference)
 
 > Set a preference of your cordova project
 
@@ -60,7 +58,7 @@ once.
 
 #### prefs
 
-*Required*
+*Required*  
 Type: `object`
 
 A key-value pair object where the key is the name of the preference and the value the value.
@@ -69,14 +67,14 @@ A key-value pair object where the key is the name of the preference and the valu
 
 ##### name
 
-*Required*
+*Required*  
 Type: `string`
 
 The name of the preference.
 
 ##### value
 
-*Required*
+*Required*  
 Type: `string`
 
 The value of the preference.
