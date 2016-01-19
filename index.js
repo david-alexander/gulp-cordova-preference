@@ -39,7 +39,7 @@ module.exports = function (name, value, platform) {
 			});
 
 			// Write the config file
-			config.write(function () {
+			config.write().then(function () {
 				this.push(file);
 
 				cb();
