@@ -30,7 +30,7 @@
     "index.js"
   ],
   "dependencies": {
-    "cordova-config": "^0.6.2",
+    "cordova-config": "github:david-alexander/cordova-config",
     "gulp-util": "^3.0.4",
     "through2": "^2.0.0"
   },

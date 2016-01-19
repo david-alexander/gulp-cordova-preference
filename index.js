@@ -14,13 +14,18 @@ var gutil = require('gulp-util');
 var Config = require('cordova-config');
 
 // export the module
-module.exports = function (name, value) {
+module.exports = function (name, value, platform) {
 	var prefs = name;
 
 	if (typeof name !== 'object') {
 		// If name is not an object, it is the key and value is the value
 		prefs = {};
 		prefs[name] = value;
+	}
+	else
+	{
+		// If name is an object, platform is the second parameter (or undefined, if only one parameter is specified).
+		platform = value;
 	}
 
 	return through.obj(function (file, enc, cb) {
@@ -30,7 +35,7 @@ module.exports = function (name, value) {
 
 			// Iterate over the preferences and update the preference
 			Object.keys(prefs).forEach(function (name) {
-				config.setPreference(name, prefs[name]);
+				config.setPreference(name, prefs[name], platform);
 			});
 
 			// Write the config file
