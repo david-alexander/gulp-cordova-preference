@@ -54,7 +54,7 @@ once.
 
 ## API
 
-### preference(prefs)
+### preference(prefs [, platform])
 
 #### prefs
 
@@ -63,7 +63,13 @@ Type: `object`
 
 A key-value pair object where the key is the name of the preference and the value the value.
 
-### preference(name, value)
+#### platform
+
+Type: `string`
+
+The name of the platform that these preferences are specific to. The preferences will be put under the corresponding platform tag in the XML.
+
+### preference(name, value [, platform])
 
 ##### name
 
@@ -78,6 +84,12 @@ The name of the preference.
 Type: `string`
 
 The value of the preference.
+
+#### platform
+
+Type: `string`
+
+The name of the platform that this preference is specific to. The preference will be put under the corresponding platform tag in the XML.
 
 ## Related
 
